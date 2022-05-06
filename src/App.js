@@ -4,10 +4,12 @@ import { MovieRow } from "./components/MovieRow";
 import FeaturedMovie from "./components/MovieRow/FeaturedMovie";
 import { Skeleton, SkeletonCircle, SkeletonText } from "@chakra-ui/react";
 import Header from "./components/MovieRow/Header/index";
+import { WindowSharp } from "@mui/icons-material";
 
 export default () => {
   const [movieList, setMovieList] = useState([]);
   const [featuredData, setFeaturedData] = useState(null);
+  const [blackHeader, setBlackHeader] = useState(false);
 
   useEffect(() => {
     const loadAll = async () => {
@@ -25,10 +27,23 @@ export default () => {
     };
     loadAll();
   }, []);
+  useEffect(() => {
+    const scrollListener = () => {
+      if (window.scrollY > 10) {
+        setBlackHeader(true);
+      } else {
+        setBlackHeader(false);
+      }
+    };
+    window.addEventListener("scroll", scrollListener);
+    return () => {
+      window.removeEventListener("scroll", scrollListener);
+    };
+  }, []);
 
   return (
     <div className="page">
-      <Header />
+      <Header black={blackHeader} />
 
       {featuredData && <FeaturedMovie item={featuredData} />}
 

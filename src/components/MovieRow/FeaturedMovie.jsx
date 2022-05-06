@@ -1,7 +1,8 @@
 import React from "react";
 import "./FeaturedMovie.css";
-import StarsIcon from "@mui/icons-material/Stars";
 import { Button, ButtonGroup } from "@chakra-ui/react";
+import icon_play from "../MovieRow/icon_play.svg";
+import icon_rectangle from "../MovieRow/icon_rectangle.svg";
 
 export default ({ item }) => {
   let firstDate = new Date(item.first_air_date);
@@ -21,13 +22,12 @@ export default ({ item }) => {
     >
       <div className="featured--vertical">
         <div className="featured--horizontal">
-          <div className="featured--genres">{genres.join(", ")}</div>
+          <div className="featured--genres">
+            <a href="">{genres.join(", ")}</a>
+          </div>
           <div className="featured--name">{item.original_name}</div>
           <div className="featured--info">{item.overview}</div>
-          <div className="featured--points">
-            {item.vote_average}
-            <StarsIcon style={{ fontSize: 15 }} />
-          </div>
+          <div className="featured--points">{item.vote_average}</div>
           <div className="featured--year">{firstDate.getFullYear()}</div>
           <div className="featured--seasons">
             {item.number_of_seasons}Temporada
@@ -35,9 +35,10 @@ export default ({ item }) => {
           </div>
 
           <div className="featured--buttons">
-            <Button colorScheme="teal" variant="outline">
-              ▶
-            </Button>
+            <a href="">
+              <icon_play></icon_play>
+              <icon_rectangle></icon_rectangle>
+            </a>
           </div>
         </div>
       </div>

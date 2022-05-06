@@ -4,10 +4,22 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  height: 4.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.8rem;
+  background: transparent;
+  transition: all ease 0.3s;
 }
+
+header.black {
+  background: #141414;
+}
+
 header h2 {
-  font-weight: medium;
-  font-size: 800;
+  font-weight: lighter;
+  font-size: 3rem;
   color: rgb(0, 173, 181);
   top: 0;
   left: 0;
@@ -15,8 +27,9 @@ header h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0 0 5rem;
+  padding: 0rem 0 0 2rem;
   text-decoration: none;
+  margin-top: -1rem;
 }
 
 .header--logo {

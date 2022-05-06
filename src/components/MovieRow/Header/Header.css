@@ -1,0 +1,24 @@
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header h2 {
+  font-weight: medium;
+  font-size: 800;
+  color: rgb(0, 173, 181);
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0 0 5rem;
+  text-decoration: none;
+}
+
+.header--logo {
+  height: 1.5rem;
+}

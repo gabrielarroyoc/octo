@@ -1,7 +1,7 @@
 # 🎬 OCTO+
 OCTO+ is an interactive web app made for those who love movies and series.
 The final project consists of login authentication and pages with unique information for each series/movie and actors.
-> Access on: octoplus-iota.vercel.app
+> Access on: https://octoplus-iota.vercel.app
 
 
 ## 🧠 To do

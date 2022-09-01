@@ -5,20 +5,18 @@ The final project consists of login authentication and pages with unique informa
 
 
 ## 🧠 To do
-- [x] header section
-- [x] hero section
-- [x] about section
-- [x] projects
-- [x] media
+- [ ] Movies page
+- [ ] Actors page
+- [ ] Series page
+- [ ] Login e autenticação
+- [ ] Watchlist
 - [x] Responsive
-- [ ] Contact Form
 
 
 ## 👩‍💻 Technologies
 - [ReactJS](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org/)
 - [ChakraUI](https://chakra-ui.com/)
-
 
 --- 
 

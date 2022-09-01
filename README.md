@@ -5,19 +5,20 @@ The final project consists of login authentication and pages with unique informa
 
 
 ## 🧠 To do
-- [ ] Movies page
-- [ ] Actors page
-- [ ] Series page
-- [ ] Login e autenticação
-- [ ] Watchlist
+- [x] header section
+- [x] hero section
+- [x] about section
+- [x] projects
+- [x] media
 - [x] Responsive
+- [ ] Contact Form
+
 
 ## 👩‍💻 Technologies
 - [ReactJS](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org/)
 - [ChakraUI](https://chakra-ui.com/)
-- [Firebase Authentication e Realtime Database](https://firebase.google.com/?hl=pt)
-- [The Movie Database - API](https://developers.themoviedb.org/3/getting-started/introduction)
+
 
 --- 
 
